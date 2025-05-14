@@ -1,2 +1,23 @@
 @use './mixins' as *;
 @use './variables' as *;
+
+// Animations
+
+// Scroll Loop
+@keyframes scrollLoop {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+@keyframes scrollLoopFinger {
+	0% {
+		transform: translateY(-20%);
+	}
+	100% {
+		transform: translateY(20%);
+	}
+}

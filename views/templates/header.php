@@ -3,7 +3,7 @@
         <div class="header__flex-helper"></div>
         <div class="header__logo-wrapper">
             <a href="<?= ROOT ?>/">
-                <img src="assets/images/logo/Logo-dourado.png" alt="logo">
+                <img class="header__img" src="assets/images/logo/Logo-dourado.png" alt="logo">
             </a>
 
         </div>
