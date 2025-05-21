@@ -25,13 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Scroll Effect
 /* document.addEventListener('DOMContentLoaded', () => {
 	const header = document.querySelector('.header');
-	const logoImg = document.querySelector('.header__img');
 
 	window.addEventListener('scroll', () => {
-		if (window.scrollY > 400) {
-			logoImg.src = 'assets/images/logo/Logo-dourado.png';
+		if (window.scrollY > 150) {
+			header.classList.add('header--scrolled');
 		} else {
-			logoImg.src = 'assets/images/logo/Logo_macaco3.png';
+			header.classList.remove('header--scrolled');
 		}
 	});
 }); */

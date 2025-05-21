@@ -68,7 +68,7 @@ lightboxImage.addEventListener('touchend', event => {
 
 function handleSwipe() {
 	const swipeDistance = endX - startX;
-	const swipeThreshold = 5;
+	const swipeThreshold = 50;
 
 	if (swipeDistance > swipeThreshold) {
 		prevImage();

@@ -1,0 +1,14 @@
+.btn {
+	color: var(--white1);
+	border: 1px solid var(--white1);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.75rem;
+	font-family: 'Space Mono', monospace;
+	padding: 0.5rem 0.75rem;
+
+	&:hover {
+		border: 1px solid var(--brand2);
+		color: var(--brand2);
+	}
+}

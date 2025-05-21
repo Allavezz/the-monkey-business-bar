@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script defer src="/js/header.js"></script>
     <script defer src="/js/lightbox.js"></script>
+    <script defer src="/js/homeMenu.js"></script>
 </head>
 
 <body>
@@ -101,20 +102,458 @@
     </section>
     <section class="home-about">
         <div class="home-about__container">
-            <div class="home-about__span">
-                <span>Who we are?</span>
+            <div class="home-about__img">
+                <img src="assets/images/about/monkey-bar2.jpg" alt="moneky business bar">
             </div>
             <div class="home-about__content">
-                <h2>
-                    Signature cocktails, crafted with care and creativity, in a space that feels like home. The Monkey Business Bar invites you to discover the art of mixology.
-                </h2>
-            </div>
-            <div class="home-about__link">
-                <a href="">Know more</a>
+                <div class="home-about__content">
+                    <h2>The Monkey Business Bar</h2>
+                    <p>The Monkey Business Bar is a cozy gem in the heart of Leiria, celebrated for its stylish décor and warm, inviting ambiance.</p>
+                    <p>Known for its expertly crafted signature cocktails and a touch of global inspiration, it's the perfect spot for those seeking a relaxed yet vibrant night out.</p>
+                    <p>Whether you're looking to celebrate or simply enjoy great drinks in a welcoming atmosphere, The Monkey Business Bar offers an unforgettable experience in the city.</p>
+                </div>
+                <div class="home-about__link">
+                    <a class="btn" href="">Know more</a>
+                </div>
             </div>
         </div>
     </section>
     <section class="home-menu">
+        <h2 class="home-menu__title">Menus</h2>
+        <div class="home-menu__container">
+            <nav class="home-menu__nav">
+                <ul class="home-menu__nav-ul">
+                    <li><button class="home-menu__li active" data-category="cocktails">Cocktails</button></li>
+                    <li><button class="home-menu__li" data-category="spirits">Spirits</button></li>
+                    <li><button class="home-menu__li" data-category="mocktails">Mocktails</button></li>
+                    <li><button class="home-menu__li" data-category="others">Others</button></li>
+                    <li><button class="home-menu__li" data-category="snacks">Snacks</button></li>
+                </ul>
+            </nav>
+            <div class="home-menu__items">
+                <div class="home-menu__item" data-category="cocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="cocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="cocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="cocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="cocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="cocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-menu__item" data-category="spirits">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="spirits">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="spirits">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="spirits">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="spirits">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="spirits">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-menu__item" data-category="mocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="mocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="mocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="mocktails">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-menu__item" data-category="others">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="others">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="others">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="others">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="others">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="others">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-menu__item" data-category="snacks">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="snacks">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-menu__item" data-category="snacks">
+                    <div class="home-menu__item-img">
+                        <img src="assets/images/menu-small/mai-py-small.webp" alt="cocktail 1">
+                    </div>
+                    <div class="home-menu__item-content">
+                        <div class="home-menu__item-header">
+                            <h4>Cocktail 1</h4>
+                            <span>10€</span>
+                        </div>
+                        <div class="home-menu__item-text">
+                            <p>Carrot - Cake - In A Glass 'Carrot cake cordial, Philadelphia cream, Merlet brother blend cognac, Naked malt whisky'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="btn" href="">See the full menu</a>
+        </div>
+    </section>
+    <section class="home-info">
+
+    </section>
+    <section class="home-background1"></section>
+    <section class="home-business">
+        <div class="home-business__container">
+            <div class="home-business__span">
+                <span>The Monkey Business</span>
+            </div>
+            <h2 class="home-business__h2">More than just a bar</h2>
+            <div class="home-business__flex-container">
+                <div class="home-business__events-container">
+                    <div class="home-business__flex-content">
+                        <span>Events</span>
+                        <h3>Workshops and Events</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eaque inventore voluptatum itaque numquam.</p>
+                        <a href="">Know more</a>
+                    </div>
+                    <div class="home-business__flex-img">
+                        <img src="../assets/images/events/events1.jpg" alt="sushi woman">
+                    </div>
+                </div>
+                <div class="home-business__studio-container">
+                    <div class="home-business__flex-content">
+                        <span>Studio</span>
+                        <h3>The Monkey Business Studio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio hic similique tempora cupiditate consequatur voluptatum dicta odit.</p>
+                        <a href="">Know more</a>
+                    </div>
+                    <div class="home-business__flex-img">
+                        <img src="../assets/images/studio/studio1.jpg" alt="physical menu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="home-reviews">
+        <div class="home-reviews__container">
+            <div class="home-reviews__span">
+                <span>Testimonials</span>
+            </div>
+            <h2 class="home-reviews__h2">Why You'll Love Us</h2>
+            <div class="home-reviews__testimonials">
+                <div class="testimonials">
+                    <button class="testimonials__prev">&#8592;</button>
+                    <div class="testimonials__wrapper ">
+                        <div class="testimonials__testimonial" draggable="true">Testimonial 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
+                        <div class="testimonials__testimonial" draggable="true">Testimonial 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
+                        <div class="testimonials__testimonial" draggable="true">Testimonial 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
+                        <div class="testimonials__testimonial" draggable="true">Testimonial 4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
+                        <div class="testimonials__testimonial" draggable="true">Testimonial 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
+                        <div class="testimonials__testimonial" draggable="true">Testimonial 6</div>
+                        <div class="testimonials__testimonial" draggable="true">Testimonial 7</div>
+                    </div>
+                    <button class="testimonials__next">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="home-menu">
         <div class="home-menu__container">
             <ul class="home-menu__grid">
                 <li class="home-menu__grid-item grid1">
@@ -153,27 +592,7 @@
                     <img class="gallery-image" src="assets/images/menu/sócrates.webp" alt="sócrates">
                     <span>Sócrates</span>
                 </li>
-                <li class="home-menu__grid-item grid11">
-                    <h3>Signature Cocktails</h3>
-                </li>
-                <li class="home-menu__grid-item grid12">
-                    <h3>Classics</h3>
-                </li>
-                <li class="home-menu__grid-item grid13">
-                    <h3>Mocktails</h3>
-                </li>
-                <li class="home-menu__grid-item grid14">
-                    <h3>Beer</h3>
-                </li>
-                <li class="home-menu__grid-item">
-                    <img class="gallery-image" src="assets/images/menu/spicy-nick.webp" alt="spicy nick">
-                    <span>Spicy Nick</span>
-                </li>
-                <li class="home-menu__grid-item">
-                    <img class="gallery-image" src="assets/images/menu/spicy-nick.webp" alt="spicy nick">
-                    <span>Spicy Nick</span>
-                </li>
-                <li class="home-menu__grid-item">
+                <li class="home-menu__grid-item grid10">
                     <img class="gallery-image" src="assets/images/menu/spicy-nick.webp" alt="spicy nick">
                     <span>Spicy Nick</span>
                 </li>
@@ -189,8 +608,9 @@
                     </div>
                 </div>
             </div>
+            <a class="home-menu__link" href="">Menu →</a>
         </div>
-    </section>
+    </section> -->
 </body>
 
 </html>
