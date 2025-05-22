@@ -492,66 +492,48 @@
         </div>
     </section>
     <section class="home-info">
-
-    </section>
-    <section class="home-background1"></section>
-    <section class="home-business">
-        <div class="home-business__container">
-            <div class="home-business__span">
-                <span>The Monkey Business</span>
-            </div>
-            <h2 class="home-business__h2">More than just a bar</h2>
-            <div class="home-business__flex-container">
-                <div class="home-business__events-container">
-                    <div class="home-business__flex-content">
-                        <span>Events</span>
-                        <h3>Workshops and Events</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eaque inventore voluptatum itaque numquam.</p>
-                        <a href="">Know more</a>
-                    </div>
-                    <div class="home-business__flex-img">
-                        <img src="../assets/images/events/events1.jpg" alt="sushi woman">
-                    </div>
+        <div class="home-info__container">
+            <div class="home-info__general">
+                <h3>General Information</h3>
+                <div class="home-info__general-content">
+                    <h4>Bar Concept</h4>
+                    <p>Signature cocktails with global inspiration, Well crafted classics, Handmade syrups</p>
                 </div>
-                <div class="home-business__studio-container">
-                    <div class="home-business__flex-content">
-                        <span>Studio</span>
-                        <h3>The Monkey Business Studio</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio hic similique tempora cupiditate consequatur voluptatum dicta odit.</p>
-                        <a href="">Know more</a>
+                <div class="home-info__general-content">
+                    <h4>Business Type</h4>
+                    <p>Pub, Cocktail Bar, Studio, Workshops/Events</p>
+                </div>
+                <div class="home-info__general-content">
+                    <h4>Payment Methods</h4>
+                    <p>Visa, Mastercard, Cash, Debit Card</p>
+                </div>
+            </div>
+            <div class="home-info__happy-hour">
+                <h3>Happy Hour!</h3>
+                <div class="home-info__happy-content">
+                    <h4>40% off all cocktails</h4>
+                    <div class="home-info__date">
+                        <span>Wed, Thu, Sun</span>
+                        <span>19:00 - 21:00</span>
                     </div>
-                    <div class="home-business__flex-img">
-                        <img src="../assets/images/studio/studio1.jpg" alt="physical menu">
+                    <div class="home-info__disclaimer">
+                        <p>* Not stackable with other discounts or promotions. Subject to stock availability.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!-- <section class="home-reviews">
-        <div class="home-reviews__container">
-            <div class="home-reviews__span">
-                <span>Testimonials</span>
-            </div>
-            <h2 class="home-reviews__h2">Why You'll Love Us</h2>
-            <div class="home-reviews__testimonials">
-                <div class="testimonials">
-                    <button class="testimonials__prev">&#8592;</button>
-                    <div class="testimonials__wrapper ">
-                        <div class="testimonials__testimonial" draggable="true">Testimonial 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
-                        <div class="testimonials__testimonial" draggable="true">Testimonial 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
-                        <div class="testimonials__testimonial" draggable="true">Testimonial 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
-                        <div class="testimonials__testimonial" draggable="true">Testimonial 4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
-                        <div class="testimonials__testimonial" draggable="true">Testimonial 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fugit cupiditate minima culpa dolorum vel similique animi, maxime atque enim.</div>
-                        <div class="testimonials__testimonial" draggable="true">Testimonial 6</div>
-                        <div class="testimonials__testimonial" draggable="true">Testimonial 7</div>
-                    </div>
-                    <button class="testimonials__next">&#8594;</button>
-                </div>
-            </div>
+    <section class="home-socials">
+        <h3>Stay Updated</h3>
+        <p>Follow us on Instagram and Facebook for the latest news, events, and behind-the-scenes moments. </p>
+        <div class="home-socials__links">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
         </div>
-    </section> -->
+    </section>
+
+
+
 
     <!-- <section class="home-menu">
         <div class="home-menu__container">
