@@ -22,7 +22,6 @@
             <div class="header__socials">
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-
             </div>
         </nav>
     </div>

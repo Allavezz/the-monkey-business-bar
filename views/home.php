@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="styles/css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script defer src="/js/header.js"></script>
-    <script defer src="/js/lightbox.js"></script>
+    <script defer src="/js/homeLightbox.js"></script>
     <script defer src="/js/homeMenu.js"></script>
+    <script defer src="/js/parallaxBackground.js"></script>
 </head>
 
 <body>
     <?php require('templates/header.php'); ?>
 
     <section class="home-hero">
-        <video class="home-hero__video" autoplay muted loop src="assets/videos/854128-hd_1920_1080_25fps.mp4">
+        <video class="home-hero__video" autoplay muted loop playsinline src="assets/videos/854128-hd_1920_1080_25fps.mp4">
         </video>
         <div class="home-hero__overlay"></div>
         <div class="home-hero__content">
@@ -102,12 +103,14 @@
     </section>
     <section class="home-about">
         <div class="home-about__container">
-            <div class="home-about__img">
-                <img src="assets/images/about/monkey-bar2.jpg" alt="moneky business bar">
+            <div class="home-about__img-wrapper">
+                <div class="home-about__img">
+                    <img src="assets/images/about/monkey-bar2.jpg" alt="moneky business bar">
+                </div>
             </div>
             <div class="home-about__content">
                 <div class="home-about__content">
-                    <h2>The Monkey Business Bar</h2>
+                    <h3>The Monkey Business Bar</h3>
                     <p>The Monkey Business Bar is a cozy gem in the heart of Leiria, celebrated for its stylish décor and warm, inviting ambiance.</p>
                     <p>Known for its expertly crafted signature cocktails and a touch of global inspiration, it's the perfect spot for those seeking a relaxed yet vibrant night out.</p>
                     <p>Whether you're looking to celebrate or simply enjoy great drinks in a welcoming atmosphere, The Monkey Business Bar offers an unforgettable experience in the city.</p>
@@ -517,82 +520,107 @@
                         <span>19:00 - 21:00</span>
                     </div>
                     <div class="home-info__disclaimer">
-                        <p>* Not stackable with other discounts or promotions. Subject to stock availability.</p>
+                        <p>* Not cumulative with other discounts or promotions. Subject to stock availability.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="home-socials">
-        <h3>Stay Updated</h3>
-        <p>Follow us on Instagram and Facebook for the latest news, events, and behind-the-scenes moments. </p>
+    <section class="home-socials" data-parallax>
+        <div class="home-socials__background" data-parallax-background></div>
+        <h3>Stay Updated, <span>follow our socials</span></h3>
         <div class="home-socials__links">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
         </div>
     </section>
-
-
-
-
-    <!-- <section class="home-menu">
-        <div class="home-menu__container">
-            <ul class="home-menu__grid">
-                <li class="home-menu__grid-item grid1">
-                    <img class="gallery-image" src="assets/images/menu/beet-the-mexican-3.webp" alt="beet the mexican">
-                    <span>Beet the Mexican</span>
-                </li>
-                <li class="home-menu__grid-item grid2">
-                    <img class="gallery-image" src="assets/images/menu/Bnegroni800.webp" alt="breakfast negroni">
-                    <span>Breakfast Negroni</span>
-                </li>
-                <li class="home-menu__grid-item grid3">
-                    <img class="gallery-image" src="assets/images/menu/el-peppe.webp" alt="el peppe">
-                    <span>El Peppe</span>
-                </li>
-                <li class="home-menu__grid-item grid4">
-                    <img class="gallery-image" src="assets/images/menu/garden.webp" alt="rose's garden">
-                    <span>Rose's Garden</span>
-                </li>
-                <li class="home-menu__grid-item grid5">
-                    <img class="gallery-image" src="assets/images/menu/mai-py.webp" alt="mai py">
-                    <span>Mai Py</span>
-                </li>
-                <li class="home-menu__grid-item grid6">
-                    <img class="gallery-image" src="assets/images/menu/monkey-sling.webp" alt="monkey sling">
-                    <span>Monkey Sling</span>
-                </li>
-                <li class="home-menu__grid-item grid7">
-                    <img class="gallery-image" src="assets/images/menu/Nuk-Cola-Punch.webp" alt="nuka cola punch">
-                    <span>Nuka Cola Punch</span>
-                </li>
-                <li class="home-menu__grid-item grid8">
-                    <img class="gallery-image" src="assets/images/menu/shanky.webp" alt="shanky's expresso">
-                    <span>Shanky's Expresso</span>
-                </li>
-                <li class="home-menu__grid-item grid9">
-                    <img class="gallery-image" src="assets/images/menu/sócrates.webp" alt="sócrates">
-                    <span>Sócrates</span>
-                </li>
-                <li class="home-menu__grid-item grid10">
-                    <img class="gallery-image" src="assets/images/menu/spicy-nick.webp" alt="spicy nick">
-                    <span>Spicy Nick</span>
-                </li>
-            </ul>
-            <div id="lightbox" class="lightbox">
-                <div class="lightbox__content">
-                    <span class="lightbox__close">&times;</span>
-                    <img class="lightbox__image" src="" alt="">
-                    <span class="lightbox__title"></span>
-                    <div class="lightbox__controls">
-                        <button class="lightbox__prev" onclick="prevImage()">&#10094;</button>
-                        <button class="lightbox__next" onclick="nextImage()">&#10095;</button>
+    <section class="home-events">
+        <div class="home-events__container">
+            <h2 class="home-events__title">Events</h2>
+            <div class="home-events__grid">
+                <div class="home-events__event">
+                    <div class="home-events__img">
+                        <img src="assets/images/events/events2.webp" alt="">
+                    </div>
+                    <div class="home-events__content">
+                        <h3>Some Event: Event 1 @ The Monkey Business Bar</h3>
+                        <p>On 10/08/2025 from 17h00 to 22h00</p>
+                    </div>
+                </div>
+                <div class="home-events__event">
+                    <div class="home-events__img">
+                        <img src="assets/images/events/events2.webp" alt="">
+                    </div>
+                    <div class="home-events__content">
+                        <h3>Some Event: Event 1 @ The Monkey Business Bar</h3>
+                        <p>On 10/08/2025 from 17h00 to 22h00</p>
+                    </div>
+                </div>
+                <div class="home-events__event">
+                    <div class="home-events__img">
+                        <img src="assets/images/events/events2.webp" alt="">
+                    </div>
+                    <div class="home-events__content">
+                        <h3>Some Event: Event 1 @ The Monkey Business Bar</h3>
+                        <p>On 10/08/2025 from 17h00 to 22h00</p>
                     </div>
                 </div>
             </div>
-            <a class="home-menu__link" href="">Menu →</a>
+            <div class="home-events__link">
+                <a class="btn" href="">See all our events</a>
+            </div>
         </div>
-    </section> -->
+    </section>
+    <section class="home-studio">
+        <div class="home-studio__container">
+            <h2 class="home-studio__title">Studio</h2>
+            <div class="home-studio__grid">
+                <div class="home-studio__item">
+                    <img class="home-studio__image" src="assets/images/studio/spicy-nick.webp" alt="">
+                </div>
+                <div class="home-studio__item">
+                    <img class="home-studio__image" src="assets/images/studio/studio1.jpg" alt="">
+                </div>
+                <div class="home-studio__item">
+                    <img class="home-studio__image" src="assets/images/studio/spicy-nick.webp" alt="">
+                </div>
+                <div class="home-studio__item">
+                    <img class="home-studio__image" src="assets/images/studio/studio1.jpg" alt="">
+                </div>
+                <div class="home-studio__item">
+                    <img class="home-studio__image" src="assets/images/studio/spicy-nick.webp" alt="">
+                </div>
+                <div class="home-studio__item">
+                    <img class="home-studio__image" src="assets/images/studio/studio1.jpg" alt="">
+                </div>
+            </div>
+            <div class="home-studio__link">
+                <a class="btn" href="">See More</a>
+            </div>
+            <div id="home-lightbox" class="home-lightbox">
+                <div class="home-lightbox__content">
+                    <span class="home-lightbox__close">&times;</span>
+                    <img class="home-lightbox__image" src="" alt="studio image">
+                    <div class="home-lightbox__controls">
+                        <button class="home-lightbox__prev" onclick="prevImage()">&#10094;</button>
+                        <button class="home-lightbox__next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-faq" data-parallax>
+        <div class="home-faq__background" data-parallax-background></div>
+        <h3>Have one question ? <span>Consult our <a href="">FAQ !</a></span></h3>
+    </section>
+    <section class="home-testimonials">
+        <div class="home-testimonials__container">
+            <h2>Why you'll love us</h2>
+        </div>
+        <div class="home-testimonials__wrapper">
+            <button class="home-testimonials"></button>
+        </div>
+    </section>
 </body>
 
 </html>

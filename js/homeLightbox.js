@@ -1,9 +1,8 @@
-const images = document.querySelectorAll('.gallery-image');
-const imageTitles = document.querySelectorAll('.home-menu__grid-item span');
-const lightbox = document.getElementById('lightbox');
-const lightboxImage = document.querySelector('.lightbox__image');
-const lightboxTitle = document.querySelector('.lightbox__title');
-const lightboxClose = document.querySelector('.lightbox__close');
+const images = document.querySelectorAll('.home-studio__image');
+const lightbox = document.getElementById('home-lightbox');
+const lightboxImage = document.querySelector('.home-lightbox__image');
+const lightboxTitle = document.querySelector('.home-lightbox__title');
+const lightboxClose = document.querySelector('.home-lightbox__close');
 
 let currentIndex = 0;
 
@@ -21,7 +20,6 @@ function closeLightbox() {
 
 function updateLightbox() {
 	lightboxImage.src = images[currentIndex].src;
-	lightboxTitle.textContent = imageTitles[currentIndex].textContent;
 }
 
 function nextImage() {
