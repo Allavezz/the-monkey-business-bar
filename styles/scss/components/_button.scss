@@ -1,31 +1,27 @@
+@use '../abstracts' as *;
+
 .btn {
-	color: var(--white1);
-	border: 1px solid var(--white1);
+	display: inline-block;
+	color: var(--brand2);
+	background-color: var(--green1);
+	border: 1px solid var(--brand2);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 0.75rem;
 	font-family: 'Space Mono', monospace;
 	padding: 0.5rem 0.75rem;
-
-	&:hover {
-		border: 1px solid var(--brand2);
-		color: var(--brand2);
-	}
+	transition: transform 0.3s ease;
 }
 
 .btn2 {
+	display: inline-block;
 	color: var(--white1);
+	background-color: var(--green2);
 	border: 1px solid var(--white1);
-	background-color: var(--brand2);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 0.75rem;
 	font-family: 'Space Mono', monospace;
 	padding: 0.5rem 0.75rem;
-
-	&:hover {
-		border: 1px solid var(--white1);
-		color: var(--white1);
-		background-color: transparent;
-	}
+	transition: transform 0.3s ease;
 }

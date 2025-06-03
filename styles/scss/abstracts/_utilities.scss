@@ -21,3 +21,16 @@
 		transform: translate(-50%, -40%) rotate(90deg);
 	}
 }
+
+// Text animation
+@keyframes typing {
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 100%;
+	} /* Typing ends at 50% of timeline */
+	100% {
+		width: 100%;
+	} /* Hold full width for pause */
+}

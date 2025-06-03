@@ -1,0 +1,255 @@
+@use '../abstracts' as *;
+
+.menu-hero {
+	position: relative;
+	width: 100%;
+	height: 30lvh;
+	background-image: url('../../../assets/images/menu/hero/menu-hero.jpg');
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	place-items: center;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.2);
+		z-index: 2;
+	}
+
+	@include respond(sm) {
+		height: 50lvh;
+	}
+
+	h1 {
+		color: var(--brand2);
+		font-size: 2.5rem;
+		letter-spacing: 1px;
+		z-index: 3;
+
+		@include respond(sm) {
+			font-size: 4rem;
+		}
+	}
+}
+
+.menu-top {
+	position: relative;
+	background-color: var(--green2);
+	padding: 2rem 1rem;
+
+	@include respond(sm) {
+		padding: 3rem 1rem;
+	}
+}
+
+.menu-nav {
+	background-color: var(--green2);
+	width: 100%;
+	position: sticky;
+	top: 96px;
+	z-index: 998;
+
+	@include respond(sm) {
+		top: 114px;
+	}
+
+	&__ul {
+		overflow-x: auto;
+		max-width: 860px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		gap: 2rem;
+		padding: 1rem;
+	}
+
+	&__link {
+		white-space: nowrap;
+		color: var(--white1);
+		font-size: 14px;
+		font-family: 'Space Mono', monospace;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: all 0.3s ease;
+
+		&.active {
+			color: var(--brand2);
+			border-bottom: 1px solid var(--brand2);
+		}
+
+		&:hover {
+			color: var(--brand2);
+		}
+	}
+}
+
+.menu-section {
+	width: 100%;
+	background-color: var(--green2);
+	padding: 3rem 1rem;
+
+	&:last-child {
+		@include respond(sm) {
+			padding-bottom: 8rem;
+		}
+	}
+
+	&--2 {
+		background-color: var(--green1);
+	}
+
+	&__container {
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	@include respond(sm) {
+		padding: 4rem 1rem;
+	}
+
+	&__h3 {
+		color: var(--brand2);
+		font-size: 2rem;
+		letter-spacing: 1px;
+		margin-bottom: 0.25rem;
+	}
+
+	&__text {
+		color: var(--text2);
+		font-size: 14px;
+		margin-bottom: 1rem;
+	}
+
+	&__divider {
+		background-color: var(--brand2);
+		height: 2.5rem;
+		width: 1px;
+		margin: 0 auto 1rem;
+	}
+
+	&__h4 {
+		color: var(--brand2);
+		font-size: 1.5rem;
+		letter-spacing: 1px;
+	}
+
+	&__wrapper {
+		width: 100%;
+		padding: 1.5rem;
+		border: 1px solid var(--white1);
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		margin: 1rem 0 2rem;
+
+		@include respond(sm) {
+			margin: 1.5rem 0 2.5rem;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-bottom: 1px solid color-mix(in srgb, var(--white2) 50%, transparent);
+		padding-bottom: 2rem;
+
+		@include respond(sm) {
+			flex-direction: row;
+			gap: 2rem;
+			justify-content: space-between;
+		}
+
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: unset;
+		}
+	}
+
+	&__img-wrapper {
+		position: relative;
+		margin-bottom: 1rem;
+		/* flex: 1 1 15%; */
+		z-index: 2;
+
+		img {
+			position: relative;
+			display: flex;
+			width: 80px;
+			height: 80px;
+			z-index: 3;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			border: 1px solid var(--white1);
+			left: 8px;
+			top: 8px;
+			z-index: 1;
+		}
+	}
+
+	&__content-wrapper {
+		text-align: center;
+		padding: 0 0.5rem;
+		/* flex: 1 1 80%; */
+
+		@include respond(sm) {
+			text-align: start;
+		}
+
+		h4 {
+			color: var(--brand2);
+			letter-spacing: 1px;
+			font-size: 18px;
+
+			@include respond(sm) {
+				font-size: 1.25rem;
+			}
+		}
+
+		p {
+			color: var(--text2);
+			font-size: 14px;
+		}
+	}
+
+	&__price-wrapper {
+		display: flex;
+	}
+
+	&__price {
+		letter-spacing: 1px;
+		color: var(--brand2);
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 1.25rem;
+
+		@include respond(sm) {
+			font-size: 1.25rem;
+		}
+	}
+
+	&__dose {
+		letter-spacing: 1px;
+		color: var(--white1);
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 1.25rem;
+
+		@include respond(sm) {
+			font-size: 1.25rem;
+		}
+	}
+}

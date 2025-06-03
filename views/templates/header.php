@@ -5,7 +5,6 @@
             <a href="<?= ROOT ?>/">
                 <img class="header__img" src="assets/images/logo/Logo-dourado.png" alt="logo">
             </a>
-
         </div>
         <div class="header__hamburger-container">
             <div class="header__hamburger"></div>

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Scroll Effect
-/* document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 	const header = document.querySelector('.header');
 
 	window.addEventListener('scroll', () => {
@@ -33,4 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
 			header.classList.remove('header--scrolled');
 		}
 	});
-}); */
+});
